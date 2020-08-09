@@ -55,7 +55,7 @@
     "extendNew": 10,
     "extendRev": 50,
     "media_files": [],
-    "mid": "1347896474573",
+    "mid": 1347896474573,
     "name": "against-randomista-article",
     "note_models": [
         {
@@ -178,14 +178,26 @@
             ],
             "latexPost": "\\end{document}",
             "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": false,
             "name": "Cloze",
+            "req": [
+                [
+                    0,
+                    "any",
+                    [
+                        0
+                    ]
+                ]
+            ],
             "sortf": 0,
             "tags": [],
             "tmpls": [
                 {
                     "afmt": "{{cloze:Text}}<br><br>\n<div class=\"small\">{{Extra}}</div>",
                     "bafmt": "",
+                    "bfont": "",
                     "bqfmt": "",
+                    "bsize": 0,
                     "did": null,
                     "name": "Cloze",
                     "ord": 0,
@@ -257,7 +269,9 @@
                 {
                     "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Back}}\n{{#Info}}<div class=\"info\">{{Info}}</div>{{/Info}}",
                     "bafmt": "",
+                    "bfont": "",
                     "bqfmt": "",
+                    "bsize": 0,
                     "did": null,
                     "name": "Forward",
                     "ord": 0,
@@ -274,8 +288,8 @@
             "data": "",
             "fields": [
                 "randomista",
-                "A proponent of randomized trials as the optimal form of research.",
-                "Rather new term (added to wiktionary 03.08.2019). Found in books from 2010, 2011, 2018.",
+                "proponent of randomized trials&nbsp;",
+                "<div>(as the optimal form of research.)<br></div><div><br></div><div><br></div>Rather new term (added to wiktionary 03.08.2019). Found in books from 2010, 2011, 2018.",
                 "define"
             ],
             "flags": 0,
@@ -287,7 +301,7 @@
             "__type__": "Note",
             "data": "",
             "fields": [
-                "We define {{c1::randomista development (RD)}}&nbsp;as an approach to {{c2::development economics}} which investigates, evaluates and recommends only interventions which can be tested by {{c3::randomised controlled trials (RCTs)}}.",
+                "randomista development is<div>&nbsp; {{c1:: approach to development economics.<div>}}<br></div></div>",
                 ""
             ],
             "flags": 0,
@@ -329,7 +343,7 @@
             "__type__": "Note",
             "data": "",
             "fields": [
-                "economic development",
+                "promotion of economic development",
                 "Wirtschaftsförderung",
                 "",
                 "en - de"
@@ -386,7 +400,7 @@
             "data": "",
             "fields": [
                 "GDP",
-                "Gross domestic product",
+                "Grodd domestic product",
                 "",
                 "acronym"
             ],
@@ -414,7 +428,7 @@
             "data": "",
             "fields": [
                 "what does \"Growth\" stand for in<div>\"Growth and the case against randomista development\"?</div>",
-                "(research on and advocacy for) growth-friendly economic policy",
+                "(research on and advocacy for)&nbsp;<div>growth-friendly economic policy</div>",
                 "",
                 ""
             ],
@@ -444,7 +458,7 @@
             "data": "",
             "fields": [
                 "contradistinction",
-                "<div></div>Distinction by contrast; the provision of one example against which another example may be defined.",
+                "<div></div>Distiguishing two concepts by giving example of their differences",
                 "<div>e.g.:&nbsp;<i>We used hamburgers and soda in <b>contradistinction</b> to healthy food.</i></div><div><br></div><div>Usage notes:<i><br></i></div>Found normally in the phrase <i>in contradistinction to</i>, <i>contradistinction</i> focuses on the contrasting attributes of <i>two similar concepts</i> and may be more emphatic (eindringlich) than distinction.<div><br></div><div>source: wiktionary</div>",
                 "define"
             ],
@@ -457,7 +471,7 @@
             "__type__": "Note",
             "data": "",
             "fields": [
-                "{{c1::The Graduation Approach}} was first developed<div>by {{c2::BRAC in Bangladesh}}, [which is] {{c3::one of the world’s largest non-governmental development organizations}},</div><div>to help address the needs of those who were {{c4::too poor for microfinance services}}.</div>",
+                "{{c1::The Graduation Approach}} was first developed<div>by {{c2::BRAC in Bangladesh::who and where}}</div>",
                 "source&nbsp;https://www.unhcr.org/55005bc39.pdf"
             ],
             "flags": 0,
@@ -527,11 +541,83 @@
             "__type__": "Note",
             "data": "",
             "fields": [
-                "The {{c1::International Monetary Fund (IMF)}}&nbsp;is an international organization, headquartered in {{c2::Washington, D.C.}}, consisting of {{c3::189}} countries working to {{c4::foster global monetary cooperation}}",
+                "&nbsp;{{c1::International Monetary Fund }}:&nbsp;<div>&nbsp;{{c2::international organization working to <br>foster global monetary cooperation}}</div>",
                 "source: wikipedia"
             ],
             "flags": 0,
             "guid": "LQr^NGUKVL",
+            "note_model_uuid": "92d41ca8-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "&nbsp;{{c1::randomista development }}:<br>&nbsp;is an approach to development economics&nbsp;<div>that {{c2::only deals with RCT-testable interventions&nbsp;</div>}}",
+                ""
+            ],
+            "flags": 0,
+            "guid": "C^IO{m)w&@",
+            "note_model_uuid": "92d41ca8-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "{{c2::development economics}}<div><br></div><div>&nbsp;{{c1::promotion of economic development applied to&nbsp;low income countries::vs promotion of economic development}}</div><div><div><div><br></div></div></div>",
+                ""
+            ],
+            "flags": 0,
+            "guid": "d<y.wTex:D",
+            "note_model_uuid": "92d41ca8-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "{{c2::promotion of economic development}}<div><br></div><div>&nbsp;{{c1::more general than development economics.::vs development economics}}</div><div><div><div><br></div></div></div>",
+                ""
+            ],
+            "flags": 0,
+            "guid": "DBj{caZ/&8",
+            "note_model_uuid": "92d41ca8-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<div>Building Resources Across Communities:</div><div>{{c1::<div>one of the world’s largest Development-NGOs</div><div></div>}}<br></div>",
+                ""
+            ],
+            "flags": 0,
+            "guid": "s3/xWC]sAe",
+            "note_model_uuid": "92d41ca8-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<div>Building Resources Across Communities:</div><div>{{c1::<div>help people too poor for microfinance services</div><div></div>::Goal}}</div>",
+                ""
+            ],
+            "flags": 0,
+            "guid": "EGu%2+isi&",
+            "note_model_uuid": "92d41ca8-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "&nbsp;The International Monetary Fund&nbsp;<div>&nbsp; consists of {{c3::189}} countries</div>",
+                ""
+            ],
+            "flags": 0,
+            "guid": "rSB7~{tF9L",
             "note_model_uuid": "92d41ca8-cb99-11ea-9c59-8c705abd0bf4",
             "tags": []
         }
