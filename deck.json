@@ -42,7 +42,7 @@
                 "ease4": 1.3,
                 "fuzz": 0.05,
                 "hardFactor": 1.2,
-                "ivlFct": 1,
+                "ivlFct": 1.0,
                 "maxIvl": 365,
                 "minSpace": 1,
                 "perDay": 9999
@@ -58,155 +58,6 @@
     "mid": 1347896474573,
     "name": "against-randomista-article",
     "note_models": [
-        {
-            "__type__": "NoteModel",
-            "crowdanki_uuid": "9325fc44-cb99-11ea-9c59-8c705abd0bf4",
-            "css": ".card {\n font-family: arial;\n font-size: 20px;\n text-align: center;\n color: black;\n background-color: white;\n}\n\n\n.info {\n  max-width: 30em;\n  margin: 0.75em auto;\n  color: #333;\n  font-size: 90%;\n  font-style: italic;\n}\n",
-            "flds": [
-                {
-                    "font": "Liberation Sans",
-                    "media": [],
-                    "name": "Front",
-                    "ord": 0,
-                    "rtl": false,
-                    "size": 20,
-                    "sticky": false
-                },
-                {
-                    "font": "Arial",
-                    "media": [],
-                    "name": "Back",
-                    "ord": 1,
-                    "rtl": false,
-                    "size": 20,
-                    "sticky": false
-                },
-                {
-                    "font": "Liberation Sans",
-                    "media": [],
-                    "name": "Info",
-                    "ord": 2,
-                    "rtl": false,
-                    "size": 20,
-                    "sticky": false
-                },
-                {
-                    "font": "Liberation Sans",
-                    "media": [],
-                    "name": "ContextCue",
-                    "ord": 3,
-                    "rtl": false,
-                    "size": 20,
-                    "sticky": false
-                }
-            ],
-            "latexPost": "\\end{document}",
-            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
-            "latexsvg": false,
-            "name": "Basic (and reversed card)",
-            "req": [
-                [
-                    0,
-                    "any",
-                    [
-                        0,
-                        3
-                    ]
-                ],
-                [
-                    1,
-                    "all",
-                    [
-                        1
-                    ]
-                ]
-            ],
-            "sortf": 0,
-            "tags": [
-                "akronym"
-            ],
-            "tmpls": [
-                {
-                    "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Back}}\n{{#Info}}<div class=\"info\">{{Info}}</div>{{/Info}}",
-                    "bafmt": "",
-                    "bfont": "",
-                    "bqfmt": "",
-                    "bsize": 0,
-                    "did": null,
-                    "name": "Forward",
-                    "ord": 0,
-                    "qfmt": "{{#ContextCue}}{{ContextCue}}: {{/ContextCue}}{{Front}}"
-                },
-                {
-                    "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Front}}",
-                    "bafmt": "",
-                    "bfont": "",
-                    "bqfmt": "",
-                    "bsize": 0,
-                    "did": null,
-                    "name": "Backwards",
-                    "ord": 1,
-                    "qfmt": "{{Back}}"
-                }
-            ],
-            "type": 0,
-            "vers": []
-        },
-        {
-            "__type__": "NoteModel",
-            "crowdanki_uuid": "92d41ca8-cb99-11ea-9c59-8c705abd0bf4",
-            "css": ".card {\n font-family: arial;\n font-size: 20px;\n text-align: center;\n color: black;\n background-color: white;\n}\n\n.cloze {\n font-weight: bold;\n color: blue;\n}\n\n.small {\nfont-size: 14px;\n}",
-            "flds": [
-                {
-                    "font": "Liberation Sans",
-                    "media": [],
-                    "name": "Text",
-                    "ord": 0,
-                    "rtl": false,
-                    "size": 20,
-                    "sticky": false
-                },
-                {
-                    "font": "Arial",
-                    "media": [],
-                    "name": "Extra",
-                    "ord": 1,
-                    "rtl": false,
-                    "size": 20,
-                    "sticky": false
-                }
-            ],
-            "latexPost": "\\end{document}",
-            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
-            "latexsvg": false,
-            "name": "Cloze",
-            "req": [
-                [
-                    0,
-                    "any",
-                    [
-                        0
-                    ]
-                ]
-            ],
-            "sortf": 0,
-            "tags": [],
-            "tmpls": [
-                {
-                    "afmt": "{{cloze:Text}}<br><br>\n<div class=\"small\">{{Extra}}</div>",
-                    "bafmt": "",
-                    "bfont": "",
-                    "bqfmt": "",
-                    "bsize": 0,
-                    "did": null,
-                    "name": "Cloze",
-                    "ord": 0,
-                    "qfmt": "{{cloze:Text}}"
-                }
-            ],
-            "type": 1,
-            "vers": []
-        },
         {
             "__type__": "NoteModel",
             "crowdanki_uuid": "92d51838-cb99-11ea-9c59-8c705abd0bf4",
@@ -280,9 +131,173 @@
             ],
             "type": 0,
             "vers": []
+        },
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "9325fc44-cb99-11ea-9c59-8c705abd0bf4",
+            "css": ".card {\n font-family: arial;\n font-size: 20px;\n text-align: center;\n color: black;\n background-color: white;\n}\n\n\n.info {\n  max-width: 30em;\n  margin: 0.75em auto;\n  color: #333;\n  font-size: 90%;\n  font-style: italic;\n}\n",
+            "flds": [
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "Front",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "Back",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "Info",
+                    "ord": 2,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "ContextCue",
+                    "ord": 3,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": false,
+            "name": "Basic (and reversed card)",
+            "req": [
+                [
+                    0,
+                    "any",
+                    [
+                        0,
+                        3
+                    ]
+                ],
+                [
+                    1,
+                    "any",
+                    [
+                        1,
+                        3
+                    ]
+                ]
+            ],
+            "sortf": 0,
+            "tags": [
+                "akronym"
+            ],
+            "tmpls": [
+                {
+                    "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Back}}\n{{#Info}}<div class=\"info\">{{Info}}</div>{{/Info}}",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "Forward",
+                    "ord": 0,
+                    "qfmt": "{{#ContextCue}}{{ContextCue}}: {{/ContextCue}}{{Front}}"
+                },
+                {
+                    "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Front}}\n{{#Info}}<div class=\"info\">{{Info}}</div>{{/Info}}",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "Backwards",
+                    "ord": 1,
+                    "qfmt": "{{#ContextCue}}{{ContextCue}}: {{/ContextCue}}{{Back}}"
+                }
+            ],
+            "type": 0,
+            "vers": []
+        },
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "92d41ca8-cb99-11ea-9c59-8c705abd0bf4",
+            "css": ".card {\n font-family: arial;\n font-size: 20px;\n text-align: center;\n color: black;\n background-color: white;\n}\n\n.cloze {\n font-weight: bold;\n color: blue;\n}\n.nightMode .cloze {\n color: lightblue;\n}\n.small {\nfont-size: 14px;\n}",
+            "flds": [
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "Text",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "Extra",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": false,
+            "name": "Cloze",
+            "req": [
+                [
+                    0,
+                    "any",
+                    [
+                        0
+                    ]
+                ]
+            ],
+            "sortf": 0,
+            "tags": [],
+            "tmpls": [
+                {
+                    "afmt": "{{cloze:Text}}<br><br>\n<div class=\"small\">{{Extra}}</div>",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "Cloze",
+                    "ord": 0,
+                    "qfmt": "{{cloze:Text}}"
+                }
+            ],
+            "type": 1,
+            "vers": []
         }
     ],
     "notes": [
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "development economics vs. economic development",
+                "development economics is <b>a part</b> of economic development.<div>development economics is economic development <b>applied to</b> low income countries.<br></div>",
+                "",
+                "relation"
+            ],
+            "flags": 0,
+            "guid": "M_HzP)uwWH",
+            "note_model_uuid": "92d51838-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": []
+        },
         {
             "__type__": "Note",
             "data": "",
@@ -295,18 +310,6 @@
             "flags": 0,
             "guid": "H3oFMgtgTg",
             "note_model_uuid": "9325fc44-cb99-11ea-9c59-8c705abd0bf4",
-            "tags": []
-        },
-        {
-            "__type__": "Note",
-            "data": "",
-            "fields": [
-                "randomista development is<div>&nbsp; {{c1:: approach to development economics.<div>}}<br></div></div>",
-                ""
-            ],
-            "flags": 0,
-            "guid": "E_+^B`+/uo",
-            "note_model_uuid": "92d41ca8-cb99-11ea-9c59-8c705abd0bf4",
             "tags": []
         },
         {
@@ -343,7 +346,7 @@
             "__type__": "Note",
             "data": "",
             "fields": [
-                "promotion of economic development",
+                "economic development",
                 "Wirtschaftsförderung",
                 "",
                 "en - de"
@@ -351,20 +354,6 @@
             "flags": 0,
             "guid": "g3<%)X_7^",
             "note_model_uuid": "9325fc44-cb99-11ea-9c59-8c705abd0bf4",
-            "tags": []
-        },
-        {
-            "__type__": "Note",
-            "data": "",
-            "fields": [
-                "development economics vs. economic development",
-                "development economics is <b>a part</b> of economic development.<div>development economics is economic development <b>applied to</b> low income countries.<br></div>",
-                "",
-                "relation"
-            ],
-            "flags": 0,
-            "guid": "M_HzP)uwWH",
-            "note_model_uuid": "92d51838-cb99-11ea-9c59-8c705abd0bf4",
             "tags": []
         },
         {
@@ -471,26 +460,12 @@
             "__type__": "Note",
             "data": "",
             "fields": [
-                "{{c1::The Graduation Approach}} was first developed<div>by {{c2::BRAC in Bangladesh::who and where}}</div>",
+                "<div>{{c1::The Graduation Approach}}:<br>&lt;div&gt;{{c2::to help people too poor for microfinance services::goal}}.&lt;/div&gt;<br>&lt;div&gt;{{c3::first developed by BRAC::first developed by}}</div>",
                 "source&nbsp;https://www.unhcr.org/55005bc39.pdf"
             ],
             "flags": 0,
             "guid": "B`:SQ+dURt",
             "note_model_uuid": "92d41ca8-cb99-11ea-9c59-8c705abd0bf4",
-            "tags": []
-        },
-        {
-            "__type__": "Note",
-            "data": "",
-            "fields": [
-                "BRAC",
-                "Building Resources Across Communities",
-                "BRAC, is an international development organisation based in Bangladesh.<div>The acronym has been changed over time.</div>",
-                "acronym"
-            ],
-            "flags": 0,
-            "guid": "u6@TdxZgK1",
-            "note_model_uuid": "92d51838-cb99-11ea-9c59-8c705abd0bf4",
             "tags": []
         },
         {
@@ -541,19 +516,7 @@
             "__type__": "Note",
             "data": "",
             "fields": [
-                "&nbsp;{{c1::International Monetary Fund }}:&nbsp;<div>&nbsp;{{c2::international organization working to <br>foster global monetary cooperation}}</div>",
-                "source: wikipedia"
-            ],
-            "flags": 0,
-            "guid": "LQr^NGUKVL",
-            "note_model_uuid": "92d41ca8-cb99-11ea-9c59-8c705abd0bf4",
-            "tags": []
-        },
-        {
-            "__type__": "Note",
-            "data": "",
-            "fields": [
-                "&nbsp;{{c1::randomista development }}:<br>&nbsp;is an approach to development economics&nbsp;<div>that {{c2::only deals with RCT-testable interventions&nbsp;</div>}}",
+                "{{c1::randomista development}}:<br>&nbsp;is an approach to {{c2::development economics}}<div>that {{c3::only deals with RCT-testable interventions}}</div>",
                 ""
             ],
             "flags": 0,
@@ -565,7 +528,7 @@
             "__type__": "Note",
             "data": "",
             "fields": [
-                "{{c2::development economics}}<div><br></div><div>&nbsp;{{c1::promotion of economic development applied to&nbsp;low income countries::vs promotion of economic development}}</div><div><div><div><br></div></div></div>",
+                "{{c2::development economics}}<div><br></div><div>&nbsp;{{c1::economic development applied to&nbsp;low income countries::vs economic development}}</div><div><div><div><br></div></div></div>",
                 ""
             ],
             "flags": 0,
@@ -577,7 +540,7 @@
             "__type__": "Note",
             "data": "",
             "fields": [
-                "{{c2::promotion of economic development}}<div><br></div><div>&nbsp;{{c1::more general than development economics.::vs development economics}}</div><div><div><div><br></div></div></div>",
+                "{{c2::economic development}}<div><br></div><div>&nbsp;{{c1::more general than development economics.::vs development economics}}</div><div><div><div><br></div></div></div>",
                 ""
             ],
             "flags": 0,
@@ -589,7 +552,7 @@
             "__type__": "Note",
             "data": "",
             "fields": [
-                "<div>Building Resources Across Communities:</div><div>{{c1::<div>one of the world’s largest Development-NGOs</div><div></div>}}<br></div>",
+                "<div>BRAC: {{c1::one of the world’s largest Development-NGOs}}, located in {{c2::Bangladesh}}</div>",
                 ""
             ],
             "flags": 0,
@@ -601,19 +564,7 @@
             "__type__": "Note",
             "data": "",
             "fields": [
-                "<div>Building Resources Across Communities:</div><div>{{c1::<div>help people too poor for microfinance services</div><div></div>::Goal}}</div>",
-                ""
-            ],
-            "flags": 0,
-            "guid": "EGu%2+isi&",
-            "note_model_uuid": "92d41ca8-cb99-11ea-9c59-8c705abd0bf4",
-            "tags": []
-        },
-        {
-            "__type__": "Note",
-            "data": "",
-            "fields": [
-                "&nbsp;The International Monetary Fund&nbsp;<div>&nbsp; consists of {{c3::189}} countries</div>",
+                "The International Monetary Fund consists of {{c1::189}} countries and is headquartered in {{c2::Washington, D.C.}}",
                 ""
             ],
             "flags": 0,
